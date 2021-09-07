@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 0;
+    background: #000000;
+    margin: 0;
+    font-family: cursive;
+}
+.logo img{
+    height: 50px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.header{
+    padding: 10px 10px;
+    position: relative;
+    z-index: 10;
+}
+.wrapper{
+    background-image: url(coverpage.jpg);
+    height: 100vh;
+    background-image:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+}
+.wrapper::before{
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.login__body{
+    padding: 60px;
+    z-index: 90;
+    position: relative;
+    max-width: 450px;
+    height: 630px;
+    margin-left: 50%;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+}
+.login__body h2{
+    color: #fff;
+    font-size: 32px;
+    margin-top: 0;
+}
+.login__body input{
+    height: 50px;
+    width: 100%;
+    border: #333 solid;
+    border-radius: 5px;
+    margin-top: 20px;
+    background: #333;
+    color: white;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.login__body button{
+    background: #FF0000;
+    color: #fff;
+    border: red solid;
+    border-radius: 5px;
+    margin-top: 39px;
+    height: 50px;
+    width: 100%;
+}
+.support{
+    display: flex;
+    width: 13px;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #fff;
+}
+.support input{
+    width: 15px;
+    height: 15px;
+}
+.remember{
+    display: flex;
+    align-items: center;
+}
+.remember span{
+    margin-right: 10px;
+    height: 25px;
+}
+.need__help{
+    color: #fff;
+    margin-left: 200px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.footer{
+    max-width: 100%;
+    margin: 5rem auto;
+    overflow: auto;
+    border-top: 8px #696969 solid;
+}
+.footer,
+.footer a{
+    color: #999999;
+    font-size: 1.2rem;
+    margin-left: 60px;
+}
+.footer p{
+    margin-bottom: 1.5rem;
+    margin-top: 10px;
+}
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat (5,1fr);
+    grid-gap: 2rem;
+}
+.footer li{
+    text-decoration: none;
+    line-height: 2.4;
+}
